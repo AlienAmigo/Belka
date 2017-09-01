@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
 	<title>BELKA. Альпинистское снаряжение и скалодром</title>
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
 	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </head>
 
 <body>
 
 	<header class="page-header">
-		<div class="page-header__contacts container">
-			<ul class="page-header__contacts-list">
+		<div class="page-header__contacts">
+			<ul class="page-header__contacts-list container">
 				<li class="page-header__contacts-item  page-header__contacts-item--clock">24 часа</li>
 				<li class="page-header__contacts-item  page-header__contacts-item--phone"><a href="tel:88129997766">8&thinsp;(812)&thinsp;999-77-88</a></li>
 				<li class="page-header__contacts-item  page-header__contacts-item--adress">Выборгское&nbsp;ш., 220</li>
@@ -19,43 +26,45 @@
 			<button class="page-header__toggler">
 				<span class="icon-kebab"></span>
 			</button>
-			<div class="page-header__main">
-				<a href="#" class="logo"><img src="" alt=""></a>
+		</div>
+		<div class="page-header__main">
+				<a href="#" class="logo"><img src="img/Belka_LOGO.png" alt=""></a>
 				<div class="page-header__buy">
-					<a href="#" class="btn">Купить билет</a>
+					<a href="#" class="btn btn--top-menu">Купить билет</a>
 				</div>
 				<nav class="main-nav">
 					<ul class="main-nav__list">
-						<li class="main-nav__item  main-nav__item--active"> <a href="" class="main-nav__link">Трассы</a> </li>
-						<li class="main-nav__item"> <a href="" class="main-nav__link">Акции</a> </li>
-						<li class="main-nav__item"> <a href="" class="main-nav__link">Цены</a> </li>
-						<li class="main-nav__item"> <a href="" class="main-nav__link">Отзывы</a> </li>
-						<li class="main-nav__item"> <a href="" class="main-nav__link">Контакты</a> </li>
+						<li class="main-nav__item  main-nav__item--active"> <a href="#traces" class="main-nav__link">Трассы</a> </li>
+						<li class="main-nav__item"> <a href="#actions" class="main-nav__link">Акции</a> </li>
+						<li class="main-nav__item"> <a href="#prices" class="main-nav__link">Цены</a> </li>
+						<li class="main-nav__item"> <a href="#reviews" class="main-nav__link">Отзывы</a> </li>
+						<li class="main-nav__item"> <a href="#contacts" class="main-nav__link">Контакты</a> </li>
 					</ul>
 				</nav>
-			</div>
+				<ul class="nav-social">
+					<li class="nav-social__item"><a href="#" class="nav-social__link nav-social__link--twitter"></a></li>
+					<li class="nav-social__item"><a href="#" class="nav-social__link nav-social__link--vk"></a></li>
+					<li class="nav-social__item"><a href="#" class="nav-social__link nav-social__link--instagram"></a></li>
+				</ul>
 		</div>
 	</header>
 
 	<main>
 
 <!-- ======================= PROMO ======================= --> 
-	<section class="promo">
+	<section id="promo" class="promo">
 		<div class="container promo__container">
-			<h1 class="<!-- promo__title  -->section-title">Скалодром</h1>
+			<h1 class="section-title">Скалодром</h1>
 			<div class="promo__descr">
-				<div class="promo__descr  promo__descr--view-xs">Заберись на&nbsp;вершину, не&nbsp;уезжая в&nbsp;горы.</div>
-				<div class="promo__descr">Скалодром BELKA для всех, кто желает впервые попробовать себя в скалолазании, а&nbsp;так&nbsp;же для спортсменов разного уровня.
-Bключает в&nbsp;себя 2&nbsp;детские трассы и&nbsp;3&nbsp;взрослые.
-Cкалолазы смогут найти подробную схему 
-всех подготовленных трасс, посмотреть категорию сложности.</div>
+				<div class="promo__descr">Заберись на&nbsp;вершину, не&nbsp;уезжая в&nbsp;горы.</div>
+				<div class="promo__descr promo__descr--view-xs">Скалодром BELKA для всех, кто желает впервые попробовать себя в скалолазании, а&nbsp;так&nbsp;же для спортсменов разного уровня. Bключает в&nbsp;себя 2&nbsp;детские трассы и&nbsp;3&nbsp;взрослые. Cкалолазы смогут найти подробную схему всех подготовленных трасс, посмотреть категорию сложности.</div>
 			</div>
-			<a href="" class="btn">Купить билет</a>
+			<a href="#" class="btn">Купить билет</a>
 		</div>
 	</section>
 
 <!-- ======================= TRACES ======================= -->
-	<section class="traces">
+	<section id="traces" class="traces">
 		<div class="container traces__container">
 		<h2 class="section-title section-title--white">Трассы</h2>
 			<ul class="traces__list">
@@ -63,14 +72,14 @@ Cкалолазы смогут найти подробную схему
 					<p class="traces__title">Tрасса&nbsp;#1</p>
 					<p class="traces__height">Высота&nbsp;15&nbsp;м.</p>
 					<p class="traces__age">Возраст&nbsp;13+</p>
-					<img src="" alt="" class="traces__img">
+					<img src="img/traces01.jpg" alt="" class="traces__img">
 					<p class="traces__descr">Трасса для опытных скалолазов.Требуется наличие хорошей физ. подготовки.</p>
 				</li>
 				<li class="traces__item">
 					<p class="traces__title">Tрасса&nbsp;#2</p>
 					<p class="traces__height">Высота&nbsp;4&nbsp;м.</p>
 					<p class="traces__age">Возраст&nbsp;4+</p>
-					<img src="" alt="" class="traces__img">
+					<img src="img/traces02.jpg" alt="" class="traces__img">
 					<p class="traces__descr">Для людей с&nbsp;разной физ. подготовкой 
 		}
 Различные зацепы и&nbsp;рельефы стены.</p>
@@ -79,7 +88,7 @@ Cкалолазы смогут найти подробную схему
 					<p class="traces__title">Tрасса&nbsp;#3</p>
 					<p class="traces__height">Высота&nbsp;10&nbsp;м.</p>
 					<p class="traces__age">Возраст&nbsp;13+</p>
-					<img src="" alt="" class="traces__img">
+					<img src="img/traces03.jpg" alt="" class="traces__img">
 					<p class="traces__descr">Трасса подойтет как для профессионалов,так и&nbsp;для любителей. Необходима хорошая физ. подготовка.
 </p>
 				</li>
@@ -87,22 +96,22 @@ Cкалолазы смогут найти подробную схему
 					<p class="traces__title">Tрасса&nbsp;#4</p>
 					<p class="traces__height">Высота&nbsp;3&nbsp;м.</p>
 					<p class="traces__age">Возраст&nbsp;4+</p>
-					<img src="" alt="" class="traces__img">
+					<img src="img/traces04.jpg" alt="" class="traces__img">
 					<p class="traces__descr">Самая невысокая трасса. Специальные зацепы для детей.</p>
 				</li>
 				<li class="traces__item">
 					<p class="traces__title">Tрасса&nbsp;#5</p>
 					<p class="traces__height">Высота&nbsp;8&nbsp;м.</p>
 					<p class="traces__age">Возраст&nbsp;13+</p>
-					<img src="" alt="" class="traces__img">
-					<p class="traces__descr">Средняя высота и&nbsp;сложность.Физ. подготовка не&nbsp;обязательна.</p>
+					<img src="img/traces05.jpg" alt="" class="traces__img">
+					<p class="traces__descr">Средняя высота и&nbsp;сложность. Физ. подготовка не&nbsp;обязательна.</p>
 				</li>
 			</ul>
 		</div>
 	</section>
 
 <!-- ======================= ACTION ======================= -->
-	<section class="actions">
+	<section id="actions" class="actions">
 		<div class="container actions__container">
 		<h2 class="section-title">Акции</h2>
 			<ul class="actions__list">
@@ -114,9 +123,9 @@ Cкалолазы смогут найти подробную схему
 	</section>
 
 <!-- ======================= ABOUT ======================= -->
-	<section class="about">
+	<section id="about" class="about">
 		<div class="container container__about">
-			<h2 class="section-title">У&nbsp;нас</h2> 
+			<h2 class="section-title section-title--white">У&nbsp;нас</h2> 
 			<ul class="about__list">
 				<li class="about__item">Альпинистское снаряжение и&nbsp;страховочные устройства французской компании Petzl</li>
 				<li class="about__item">Понятная маркировка трасс (ламинированные таблички и&nbsp;зацепки определенного цвета для каждой трассы)
@@ -127,24 +136,24 @@ Cкалолазы смогут найти подробную схему
 	</section>
 
 <!-- ======================= PHOTO ======================= -->
-	<section class="photo">
+	<section id="photo" class="photo">
 		<div class="container photo__container">
 			<ul class="photo__list">
-				<li class="_photo__item"><img src="" alt="" class="photo__img"></li>
-				<li class="_photo__item"><img src="" alt="" class="photo__img"></li>
-				<li class="_photo__item"><img src="" alt="" class="photo__img"></li>
+				<li class="_photo__item"><img src="img/photo01.jpg" alt="" class="photo__img"></li>
+				<li class="_photo__item"><img src="img/photo02.jpg" alt="" class="photo__img"></li>
+				<li class="_photo__item"><img src="img/photo03.jpg" alt="" class="photo__img"></li>
 			</ul>
 		</div>
 	</section>
 
 <!-- ======================= PRICES ======================= -->
-	<section class="prices">
+	<section id="prices" class="prices">
 		<h2 class="section-title">Цены</h2>
 		<table class="prices__table">
 			<thead class="prices__table-head">
 				<td class="prices__head-cell"></td>
 				<td class="prices__head-cell"><span class="prices__cell-1st-line">Детский </span>от&nbsp;4&nbsp;лет</td>
-				<td class="prices__head-cell"><span class="prices__cell-1st-line">Взрослый<span class="price-head-cell-1stline-lg">/Детский </span></span>от&nbsp;7&nbsp;лет</td></td>
+				<td class="prices__head-cell"><span class="prices__cell-1st-line">Взрослый<span class="price-head-cell-1stline-lg">/Детский </span></span>от&nbsp;7&nbsp;лет</td>
 			</thead>
 			<tr>
 				<td colspan="3" class="prices__subhead-cell">Прохождение препятствий парка <span class="prices__subhead-bold">3&nbsp;часа</span></td>
@@ -210,13 +219,13 @@ Cкалолазы смогут найти подробную схему
 
 
 		<div class="prices__btn-wrap">
-			<a href="" class="btn btn--red">Купить билет</a>
-			<a href="" class="prices__safety-link">Техника безопасности</a>			
+			<a href="#" class="btn btn--red">Купить билет</a>
+			<a href="assets/SafetyInstr.pdf" class="prices__safety-link">Техника безопасности</a>			
 		</div>
 	</section>
 
 <!-- ======================= REVIEWS ======================= -->
-	<section class="reviews">
+	<section id="reviews" class="reviews">
 		<div class="container reviews__container">
 			<ul class="reviews__list">
 				<li class="reviews__item">
@@ -224,8 +233,8 @@ Cкалолазы смогут найти подробную схему
 					<p class="reviews__name">Алексей.</p>
 					<p class="reviews__status">Скалолаз-любитель.</p>
 					<ul class="reviews__social-links">
-						<li class="reviews__social-btn"><a href="" class="reviews__link reviews__link--instagram"></a></li>
-						<li class="reviews__social-btn"><a href="" class="reviews__link reviews__link--vk"></a></li>
+						<li class="reviews__social-btn"><a href="#" class="reviews__link reviews__link--instagram"></a></li>
+						<li class="reviews__social-btn"><a href="#" class="reviews__link reviews__link--vk"></a></li>
 					</ul>
 					<p class="reviews__text">Интересные трассы, вкусная еда и&nbsp;амые приветливые тренера!</p>
 				</li>
@@ -234,8 +243,8 @@ Cкалолазы смогут найти подробную схему
 					<p class="reviews__name">Мария.</p>
 					<p class="reviews__status">студентка.</p>
 					<ul class="reviews__social-links">
-						<li class="reviews__social-btn"><a href="" class="reviews__link reviews__link--instagram"></a></li>
-						<li class="reviews__social-btn"><a href="" class="reviews__link reviews__link--vk"></a></li>
+						<li class="reviews__social-btn"><a href="#" class="reviews__link reviews__link--instagram"></a></li>
+						<li class="reviews__social-btn"><a href="#" class="reviews__link reviews__link--vk"></a></li>
 					</ul>
 					<p class="reviews__text">Лучший скалодром в&nbsp;городе!</p>
 				</li>
@@ -244,8 +253,8 @@ Cкалолазы смогут найти подробную схему
 					<p class="reviews__name">Екатерина.</p>
 					<p class="reviews__status">Мама троих детей.</p>
 					<ul class="reviews__social-links">
-						<li class="reviews__social-btn"><a href="" class="reviews__link reviews__link--instagram"></a></li>
-						<li class="reviews__social-btn"><a href="" class="reviews__link reviews__link--vk"></a></li>
+						<li class="reviews__social-btn"><a href="#" class="reviews__link reviews__link--instagram"></a></li>
+						<li class="reviews__social-btn"><a href="#" class="reviews__link reviews__link--vk"></a></li>
 					</ul>
 					<p class="reviews__text">Парк «BELKA»&nbsp;— отличная альтернатива наскучившим походам в&nbsp;кино и&nbsp;кафе.</p>
 				</li>
@@ -258,28 +267,28 @@ Cкалолазы смогут найти подробную схему
 <!-- ======================= FOOTER ======================= -->
 	<footer class=page-footer>
 		<div class="container page-footer__container">
-			<div class="page-footer__contacts">
+			<div id="contacts" class="page-footer__contacts">
 				<p class="page-footer__contacts-adress">Выборгское&nbsp;ш., 220</p>
 				<p class="page-footer__contacts-phone"><a href="tel:88129997766">8&thinsp;(812)&thinsp;999-77-88</a></p>
 
 				<ul class="page-footer__nav-list">
-					<li class="page-footer__nav-item"><a href="" class="page-footer__link">Трассы</a></li>
-					<li class="page-footer__nav-item"><a href="" class="page-footer__link">Акции</a></li>
-					<li class="page-footer__nav-item"><a href="" class="page-footer__link">Цены</a></li>
-					<li class="page-footer__nav-item"><a href="" class="page-footer__link">Отзывы</a></li>
-					<li class="page-footer__nav-item"><a href="" class="page-footer__link">Контакты</a></li>
+					<li class="page-footer__nav-item"><a href="#traces" class="page-footer__link">Трассы</a></li>
+					<li class="page-footer__nav-item"><a href="#actions" class="page-footer__link">Акции</a></li>
+					<li class="page-footer__nav-item"><a href="#prices" class="page-footer__link">Цены</a></li>
+					<li class="page-footer__nav-item"><a href="#reviews" class="page-footer__link">Отзывы</a></li>
+					<li class="page-footer__nav-item"><a href="#contacts" class="page-footer__link">Контакты</a></li>
 				</ul>
 
 				<ul class="page-footer__social-list">
-					<li class="page-footer__social-item"><a href="" class="page-footer__social-link page-footer__social-link--twitter"></a></li>
-					<li class="page-footer__social-item page-footer__social-link--vk"><a href="" class="page-footer__social-link"></a></li>
-					<li class="page-footer__social-item"><a href="" class="page-footer__social-link page-footer__social-link--instagram"></a></li>
+					<li class="page-footer__social-item"><a href="#" class="page-footer__social-link page-footer__social-link--twitter"></a></li>
+					<li class="page-footer__social-item page-footer__social-link--vk"><a href="#" class="page-footer__social-link"></a></li>
+					<li class="page-footer__social-item"><a href="#" class="page-footer__social-link page-footer__social-link--instagram"></a></li>
 				</ul>
 
-				<a href="" class="btn btn-up"></a>
+				<a href="#" class="btn btn-up"></a>
 			</div>
 			<div class="page-footer__map">
-				<iframe src="" frameborder="0"></iframe>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1990.2733285453498!2d30.268773316102596!3d60.07684198192661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963547d7977ee9%3A0x303e6d5c12d21ac8!2z0JLRi9Cx0L7RgNCz0YHQutC-0LUg0YguLCAyMjAsINCf0LDRgNCz0L7Qu9C-0LLQviwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5NDM2Mg!5e0!3m2!1sru!2sru!4v1504254177748" width="320" height="230" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</div>
 		</div>
 	</footer>
