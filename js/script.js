@@ -1,10 +1,13 @@
 $(document).ready(function(){
 // Switches
+//Top menu - XS
+// $('.page-header__toggler').toggleClass('.page-header__main');
+
 function Accordeon() {
 	$(this).toggleClass('prices-accrod__item--active');
 	$('.prices-accrod__item').not(this).removeClass('prices-accrod__item--active');
 }
-	$('.prices-accrod__item').on('click', Accordeon);
+$('.prices-accrod__item').on('click', Accordeon);
 
 // Carousele	
 	$('.traces__list').slick({
