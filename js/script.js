@@ -1,9 +1,19 @@
 $(document).ready(function(){
 // Switches
+
 //Top menu - XS
 $('.page-header__toggler').on('click', function() {
 	$('.page-header__main').toggle();
 });
+
+//Table check cell - LG
+function CheckCell() {
+	$(this).toggleClass('prices__cell--check');
+	$('.prices__cell--check').not(this).removeClass('prices__cell--check');
+}
+
+$('.prices__cell--sel').on('click', CheckCell);
+
 
 function Accordeon() {
 	$(this).toggleClass('prices-accrod__item--active');
@@ -26,7 +36,8 @@ function Accordeon() {
 		{
 			breakpoint: 1280,
 			settings: {
-				slidesToShow: 3,
+				arrows: false,
+				slidesToShow: 5,
 				slidesToScroll: 1,
 				infinite: true,
 				dots: false
@@ -107,6 +118,9 @@ function Accordeon() {
 		{
 			breakpoint: 1280,
 			settings: {
+				arrows: true,	
+				prevArrow: '.btn-prev3',
+				nextArrow: '.btn-next3',
 				slidesToShow: 3,
 				slidesToScroll: 1,
 				infinite: true,
