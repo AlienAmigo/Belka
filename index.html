@@ -9,9 +9,6 @@
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/slick-theme.css">
 	<link rel="stylesheet" href="css/style.css">
-	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-	<script type="text/javascript" src="js/slick.min.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
 </head>
 
 <body>
@@ -34,7 +31,8 @@
 <!-- 				</div> -->
 				<nav class="main-nav">
 					<ul class="main-nav__list">
-						<li class="main-nav__item  main-nav__item--active"> <a href="#traces" class="main-nav__link">Трассы</a> </li>
+						<li class="main-nav__item  main-nav__item--active"> <a 
+						ref="#traces" class="main-nav__link">Трассы</a> </li>
 						<li class="main-nav__item"> <a href="#actions" class="main-nav__link">Акции</a> </li>
 						<li class="main-nav__item"> <a href="#prices" class="main-nav__link">Цены</a> </li>
 						<li class="main-nav__item"> <a href="#reviews" class="main-nav__link">Отзывы</a> </li>
@@ -73,36 +71,46 @@
 					<p class="traces__title">Tрасса&nbsp;#1</p>
 					<p class="traces__height">Высота&nbsp;15&nbsp;м.</p>
 					<p class="traces__age">Возраст&nbsp;13+</p>
-					<img src="img/traces01.jpg" alt="" class="traces__img">
+					<div class="traces__img-wrap">
+						<img src="img/traces01.jpg" alt="" class="traces__img">
+					</div>
 					<p class="traces__descr">Трасса для опытных скалолазов. Требуется наличие хорошей физ. подготовки.</p>
 				</li>
 				<li class="traces__item">
 					<p class="traces__title">Tрасса&nbsp;#2</p>
 					<p class="traces__height">Высота&nbsp;4&nbsp;м.</p>
 					<p class="traces__age">Возраст&nbsp;4+</p>
-					<img src="img/traces02.jpg" alt="" class="traces__img">
+					<div class="traces__img-wrap">
+						<img src="img/traces02.jpg" alt="" class="traces__img">
+					</div>
 					<p class="traces__descr">Для людей с&nbsp;разной физ. подготовкой Различные зацепы и&nbsp;рельефы стены.</p>
 				</li>
 				<li class="traces__item">
 					<p class="traces__title">Tрасса&nbsp;#3</p>
 					<p class="traces__height">Высота&nbsp;10&nbsp;м.</p>
 					<p class="traces__age">Возраст&nbsp;13+</p>
-					<img src="img/traces03.jpg" alt="" class="traces__img">
-					<p class="traces__descr">Трасса подойтет как для профессионалов,так и&nbsp;для любителей. Необходима хорошая физ. подготовка.
+					<div class="traces__img-wrap">
+						<img src="img/traces03.jpg" alt="" class="traces__img">
+					</div>
+					<p class="traces__descr">Трасса подойтет как для профессионалов, так и&nbsp;для любителей. Необходима хорошая физ. подготовка.
 </p>
 				</li>
 				<li class="traces__item">
 					<p class="traces__title">Tрасса&nbsp;#4</p>
 					<p class="traces__height">Высота&nbsp;3&nbsp;м.</p>
 					<p class="traces__age">Возраст&nbsp;4+</p>
-					<img src="img/traces04.jpg" alt="" class="traces__img">
+					<div class="traces__img-wrap">
+						<img src="img/traces04.jpg" alt="" class="traces__img">
+					</div>
 					<p class="traces__descr">Самая невысокая трасса. Специальные зацепы для детей.</p>
 				</li>
 				<li class="traces__item">
 					<p class="traces__title">Tрасса&nbsp;#5</p>
 					<p class="traces__height">Высота&nbsp;8&nbsp;м.</p>
 					<p class="traces__age">Возраст&nbsp;13+</p>
-					<img src="img/traces05.jpg" alt="" class="traces__img">
+					<div class="traces__img-wrap">
+						<img src="img/traces05.jpg" alt="" class="traces__img">
+					</div>
 					<p class="traces__descr">Средняя высота и&nbsp;сложность. Физ. подготовка не&nbsp;обязательна.</p>
 				</li>
 			</ul>
@@ -142,9 +150,9 @@
 		<div class="container photo__container">
 			<div class="btn-prev2"></div>
 			<ul class="photo__list">
-				<li class="_photo__item"><img src="img/photo01.jpg" alt="" class="photo__img"></li>
-				<li class="_photo__item"><img src="img/photo02.jpg" alt="" class="photo__img"></li>
-				<li class="_photo__item"><img src="img/photo03.jpg" alt="" class="photo__img"></li>
+				<li class="photo__item"><img src="img/photo01.jpg" alt="" class="photo__img"></li>
+				<li class="photo__item"><img src="img/photo02.jpg" alt="" class="photo__img"></li>
+				<li class="photo__item"><img src="img/photo03.jpg" alt="" class="photo__img"></li>
 			</ul>
 			<div class="btn-next2"></div>
 		</div>
@@ -160,7 +168,7 @@
 					<thead class="prices__table-head">
 						<td class="prices__head-cell"></td>
 						<td class="prices__head-cell"><span class="prices__cell-1st-line">Детский </span>от&nbsp;4&nbsp;лет</td>
-						<td class="prices__head-cell"><span class="prices__cell-1st-line">Взрослый<span class="price-head-cell-1st-line-lg">/Детский </span></span>от&nbsp;7&nbsp;лет</td>
+						<td class="prices__head-cell"><span class="prices__cell-1st-line">Взрослый<span class="prices-cell-1st-line-lg">/Детский </span></span>от&nbsp;7&nbsp;лет</td>
 					</thead>
 					<tr>
 						<td colspan="3" class="prices__subhead-cell">Прохождение препятствий парка <span class="prices__subhead-bold">3&nbsp;часа</span></td>
@@ -346,5 +354,9 @@
 			</div>
 		</div>
 	</footer>
+	
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>	
 </body>
 </html>

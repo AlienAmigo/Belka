@@ -25,12 +25,14 @@ function Accordeon() {
 	$('.traces__list').slick({
 	dots: false,
 	arrows: true,
+	variableWidth: true,
   prevArrow: '.btn-prev1',
   nextArrow: '.btn-next1',
+  // centerMode: true,
 	infinite: true,
 	mobileFirst: true,
 	speed: 300,
-	slidesToShow: 1,
+	slidesToShow: 5,
 	slidesToScroll: 1,
 	responsive: [
 		{
@@ -66,6 +68,7 @@ function Accordeon() {
 	$('.photo__list').slick({
 	dots: false,
 	arrows: true,
+	variableWidth: true,
   prevArrow: '.btn-prev2',
   nextArrow: '.btn-next2',
 	infinite: true,
@@ -77,6 +80,7 @@ function Accordeon() {
 		{
 			breakpoint: 1280,
 			settings: {
+				arrows: true,
 				slidesToShow: 3,
 				slidesToScroll: 1,
 				infinite: true,
@@ -107,6 +111,7 @@ function Accordeon() {
 	$('.reviews__list').slick({
 	dots: false,
 	arrows: true,
+	variableWidth: true,
   prevArrow: '.btn-prev3',
   nextArrow: '.btn-next3',
 	infinite: true,
@@ -118,32 +123,22 @@ function Accordeon() {
 		{
 			breakpoint: 1280,
 			settings: {
-				arrows: true,	
-				prevArrow: '.btn-prev3',
-				nextArrow: '.btn-next3',
-				slidesToShow: 3,
+				slidesToShow: 1,
 				slidesToScroll: 1,
 				infinite: true,
-				dots: false
 			}
 		},
 		{
 			breakpoint: 768,
 			settings: {
-				arrows: true,
-				prevArrow: '.btn-prev3',
-				nextArrow: '.btn-next3',
 				infinite: true,
-				slidesToShow: 3,
+				slidesToShow: 1,
 				slidesToScroll: 1
 			}
 		},
 		{
 			breakpoint: 320,
 			settings: {
-				arrows: true,
-				prevArrow: '.btn-prev3',
-				nextArrow: '.btn-next3',
 				infinite: true,
 				slidesToShow: 1,
 				slidesToScroll: 1
